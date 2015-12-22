@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Sample Form</title>
+</head>
+<body>
+  <h1>Sample form</h1>
+
+  <form action="fake/action" method="post">
+    <p>
+      <label>First Name</label>
+      <input type="text" name="firstName">
+    </p>
+    <p>
+      <label>Last Name</label>
+      <input type="text" name="lastName">
+    </p>
+
+    <h3>Hobbies</h3>
+    <p>
+      <input type="checkbox" name="sports" value="sports">Sports
+      <input type="checkbox" name="fashion" value="fashion">Fashion
+      <input type="checkbox" name="movies" value="movies">Movies
+      <input type="checkbox" name="food" value="food">Food
+    </p>
+
+    <h3>Gender</h3>
+    <p>
+      <input type="radio" name="gender" value="m">Male <br>
+      <input type="radio" name="gender" value="f">Female <br>
+    </p>
+
+    <h3>Year of Study</h3>
+    <p>
+      <select name="yearOfStudy">
+        <option value="freshman">Freshman</option>
+        <option value="sophomore">Sophomore</option>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+      </select>
+    </p>
+
+    <h3>Political Allegiance</h3>
+    <p>
+      <select multiple name="politicalAllegiance" size="4">
+        <option value="republican">Republican</option>
+        <option value="democrat">Democrat</option>
+        <option value="independent">Independent</option>
+        <option value="indifferent">I don't know</option>
+      </select>
+    </p>
+
+    <h3>Question: Why should someone hire you?</h3>
+    <textarea name="sellStrategy" rows="8" cols="55"></textarea>
+
+    <h3>Name of first boyfriend/girlfriend (hidden)</h3>
+    <p>
+      <input type="password" name="firstLove">
+    </p>
+
+    <h3>Who is this?</h3>
+    <p>
+      <input type="image" onclick="javascript:alert('Oops');" width="150" name="signup" src="http://media3.s-nbcnews.com/j/newscms/2015_51/1344216/151216-martin-shkreli-turing-mn-1110_685e2bc1850671ce6927561084202830.nbcnews-ux-2880-1000.jpg" />
+    </p>
+
+    <h3>
+    <input type="reset" value="Reset answers">
+    <input type="submit">
+  </form>
+</body>
+
+</html>
